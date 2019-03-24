@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @media_house.name %>
+</p>
+<p>
+	<strong>Country:</strong>
+	<%= @media_house.country.name %>
+</p>
+<p>
+	<strong>State:</strong>
+	<%= @media_house.state.name %>
+</p>
+
+<%= link_to 'Edit', edit_media_house_path(@media_house) %> |
+<%= link_to 'Back', media_houses_path %>
